@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PixelOpen\CloudflareTurnstileBundle\Http;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
@@ -14,9 +15,7 @@ final class CloudflareTurnstileHttpClientTest extends TestCase
 
     private const DUMMY_TURNSTILE_RESPONSE = 'dummy-response';
 
-    /**
-     * @dataProvider provideResponseContents
-     */
+    #[DataProvider('provideResponseContents')]
     public function testShouldVerifyResponse(bool $expectedVerificationResult, array $responseContent): void
     {
         $httpClientMock = $this->createMock(HttpClientInterface::class);
