@@ -1,5 +1,5 @@
 {
-  "name": "driveto/cloudflare-turnstile-bundle",
+  "name": "pixelopen/cloudflare-turnstile-bundle",
   "description": "A simple package to help integrate Cloudflare Turnstile on Symfony.",
   "keywords": [
     "symfony bundle",
@@ -12,10 +12,6 @@
     {
       "name": "Pixel Open Team",
       "homepage": "https://pixel-open.org/projects/symfony-bundle-cloudflare-turnstile/"
-    },
-    {
-      "name": "Ivan Kvasnica",
-      "homepage": "https://ikvasnica.com/"
     }
   ],
   "require": {
@@ -42,7 +38,6 @@
     "phpstan/phpstan-symfony": "^1.2",
     "symplify/easy-coding-standard": "^11.1",
     "rector/rector": "^0.14.5",
-    "phpunit/phpunit": "^9.6",
-    "roave/security-advisories": "dev-latest"
+    "phpunit/phpunit": "^9.6"
   }
 }
